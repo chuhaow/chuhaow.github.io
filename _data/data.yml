@@ -45,7 +45,7 @@ experience:
     details:
       d1: •　Wrote and improved API documentation resulting overall better user experience 
       d2: •　Migrated code from a monolithic system to a micro-service resulting in increased product maintainability
-      d2: •　Wrote unit tests and automated tests resulting in less bugs in final product
+      d3: •　Wrote unit tests and automated tests resulting in less bugs in final product
   
   - role: Software Developer (Intern)
     time: January 2022 - April 2022
