@@ -9,7 +9,10 @@
                     {{p.title}}
                 </a>
             </span>
-            <span class="details">- {{p.details}}</span>
+            <div class="details">{{p.details.d1}}</div>
+            <div class="details">{{p.details.d2}}</div>
+            <div class="details">{{p.details.d3}}</div>
+            <p class="technologies">Technologies Used: {{p.technologies_used}}</p>
         </div>
     {% endfor %}
 </section>

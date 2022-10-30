@@ -1,7 +1,10 @@
 .education {
     margin-bottom: 20px;
     .title {
-        @include sub-header;
+        @include header;
+    }
+    .details {
+        @include body-text;
     }
     .education-item {
         margin-bottom: 20px;
@@ -13,6 +16,9 @@
             @include body-text;
         }
         .time {
+            @include body-text;
+        }
+        .info{
             @include body-text;
         }
     }
