@@ -344,7 +344,7 @@ h3.my-profession {
     margin-bottom: 20px;
     width: 100%;
     min-width: 500px;
-    max-height: 300px;
+    max-height: 400px;
     /* Set the maximum height of the timeline card */
     overflow-y: auto;
     /* Enable vertical scrolling for the timeline card */
