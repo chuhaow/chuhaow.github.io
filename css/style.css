@@ -452,32 +452,45 @@ h3.my-profession {
 
 .project-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-
+    position: relative;
+    text-align: center;
 }
 
-.project-card {
+.project-card-container {
+    margin-bottom: 5px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    min-width: 200px;
+    padding: 5px;
+}
+
+.project-card-container .project-card{
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width:390px;
-    min-width: 300px;
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3S ease;
     height: 600px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 5px;
-    overflow-y: auto;
+}
+
+.project-container .project-card-container .project-card:hover .icon
+{
+    background: var(--skin-color);
+}
+.project-container .project-card-container .project-card:hover .fa
+{
+    font-size: 25px;
+    color: #ffffff;
 }
 
 .project-card .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    margin:  0 auto 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
 
 .project-card .icon .fa {
