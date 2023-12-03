@@ -64,3 +64,26 @@ function toggleAside(){
       allSection[i].classList.toggle("open");
   }
 }
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+window.onload = function() {
+  let iter = 0;
+  const interval = setInterval(() =>{
+    const nameElement = document.getElementsByClassName("name")[0];
+    nameElement.innerText = nameElement.innerText.split("")
+    .map((letter,index) =>{
+      if(index*5.0 < iter ){
+        return nameElement.dataset.value[index];
+      }
+
+      return letters[Math.floor(Math.random()*26)]
+    }) 
+    .join("");
+    
+    if(iter > 50) clearInterval(interval);
+
+    iter+=1;
+  }, 30);
+
+};
