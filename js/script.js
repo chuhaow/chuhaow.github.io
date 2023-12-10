@@ -3,7 +3,7 @@ const navList = nav.querySelectorAll("li")
 const totalNavList = navList.length
 const allSection = document.querySelectorAll(".section")
 const totalSection = allSection.length;
-console.log(allSection)
+
 for(let i=0; i<totalNavList; i++)
 {
   var a = navList[i].querySelector("a");
@@ -39,7 +39,6 @@ function showSection(element)
         allSection[i].classList.remove("active");
     }
     const target = element.getAttribute("href");
-    console.log(target)
     document.querySelector(target).classList.add("active")
 }
 
@@ -92,6 +91,7 @@ window.onload = function() {
 
 //Personal 
 const track = document.getElementById("image-track");
+const images = track.getElementsByClassName("image");
 const onMouseDown = e =>{
   track.dataset.mouseDownAt = e.clientX
 }
@@ -114,7 +114,7 @@ const onMouseMove = e =>{
     transform: `translate(${nextPercentage}%, -50%)`
   }, { duration: 1200, fill: "forwards" });
   
-  for(const image of track.getElementsByClassName("image")) {
+  for(const image of images) {
     image.animate({
       objectPosition: `${100 + nextPercentage}% center`
     }, { duration: 1200, fill: "forwards" });
