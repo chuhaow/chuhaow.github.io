@@ -3,6 +3,7 @@ const navList = nav.querySelectorAll("li")
 const totalNavList = navList.length
 const allSection = document.querySelectorAll(".section")
 const totalSection = allSection.length;
+var activeSection = "#home";
 
 for(let i=0; i<totalNavList; i++)
 {
@@ -39,6 +40,7 @@ function showSection(element)
         allSection[i].classList.remove("active");
     }
     const target = element.getAttribute("href");
+    activeSection = target;
     document.querySelector(target).classList.add("active")
 }
 
@@ -90,6 +92,7 @@ window.onload = function() {
 
 
 //Personal 
+/*
 const track = document.getElementById("image-track");
 const images = track.getElementsByClassName("image");
 const onMouseDown = e =>{
@@ -97,6 +100,7 @@ const onMouseDown = e =>{
 }
 
 const onMouseMove = e =>{
+  if(activeSection != "#personal") return;
   if(track.dataset.mouseDownAt === "0") return;
   const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
   
@@ -137,3 +141,4 @@ window.ontouchend = e => onMouseUp(e.touches[0]);
 window.onmousemove = e => onMouseMove(e);
 
 window.ontouchmove = e => onMouseMove(e.touches[0]);
+*/
