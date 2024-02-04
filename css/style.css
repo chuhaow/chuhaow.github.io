@@ -484,6 +484,12 @@ h3.my-profession {
     color: #ffffff;
 }
 
+.project-container .project-card-container .project-card:hover .fa-brands
+{
+    font-size: 35px;
+    color: #ffffff;
+}
+
 .project-card{
     overflow: auto;
 }
@@ -498,6 +504,13 @@ h3.my-profession {
 
 .project-card .icon .fa {
     font-size: 30px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.project-card .icon .fa-brands {
+    font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
     transition: all 0.3s ease;
